@@ -1,8 +1,8 @@
-# Proyecto con APIS tercera entrega para Ada
+# Proyecto con APIS 
 ***
-Les presento mi tercer proyecto realizado para Ada. El mísmo consiste en una plataforma de publicaciones de "puestos de empleos it". Cada empleo es información cargada en una base de datos de mokApi realizada personalmente para este tp. El usuario puede acceder a cada puesto, filtrar su busqueda con los selects del navbar, editar cada card con informacion que se envia a la base de datos o eliminarla y crear una nueva publicación incluso. El usuario puede elegir si ver el diseño en modo claro o modo oscuro[Podés verlo accediendo a este link!]()
+Esta pagina es un pryecto viejo que quedo fuera de Goithub asi que lo volvi a resubir. El mísmo consiste en una plataforma de publicaciones de "puestos de empleos it". Cada empleo es información cargada en una base de datos de mokApi realizada personalmente para este tp. El usuario puede acceder a cada puesto, filtrar su busqueda con los selects del navbar, editar cada card con informacion que se envia a la base de datos o eliminarla y crear una nueva publicación incluso. El usuario puede elegir si ver el diseño en modo claro o modo oscuro[Podés verlo accediendo a este link!](https://barbaraglopez.github.io/crud-job/index.html)
 ***
-Está diseñado en HTML, CSS, Javascript y Sass.
+Está diseñado en HTML, CSS, Javascript y Sass con APIS de mockAPI
 ***
 ## Primer renderizado:
 Este proyecto cuenta con una interaccion dinamica y real con la base de datos. Todos los datos que se editan, se eliminan y se suben, se envian a la API base con la cúal mostramos la información. En el primer renderizado vemos un spinner que nos indica que la pagina esta cargando, luego se visualizan en pantalla las cards con su respectiva información, asi se ve el primer renderizado en modo oscuro y modo claro:
