@@ -1,6 +1,6 @@
 # Proyecto con APIS 
 ***
-Esta pagina es un pryecto viejo que quedo fuera de Goithub asi que lo volvi a resubir. El mísmo consiste en una plataforma de publicaciones de "puestos de empleos it". Cada empleo es información cargada en una base de datos de mokApi realizada personalmente para este tp. El usuario puede acceder a cada puesto, filtrar su busqueda con los selects del navbar, editar cada card con informacion que se envia a la base de datos o eliminarla y crear una nueva publicación incluso. El usuario puede elegir si ver el diseño en modo claro o modo oscuro[Podés verlo accediendo a este link!](https://barbaraglopez.github.io/crud-job/index.html)
+Esta pagina es un proyecto viejo que quedo fuera de Github pages asi que lo volvi a resubir. El mísmo consiste en una plataforma de publicaciones de "puestos de empleos it". Cada empleo es información cargada en una base de datos de mokApi realizada personalmente para este tp. El usuario puede acceder a cada puesto, filtrar su busqueda con los selects del navbar, editar cada card con informacion que se envia a la base de datos o eliminarla y crear una nueva publicación incluso. El usuario puede elegir si ver el diseño en modo claro o modo oscuro[Podés verlo accediendo a este link!](https://barbaraglopez.github.io/crud-job/index.html)
 ***
 Está diseñado en HTML, CSS, Javascript y Sass con APIS de mockAPI
 ***
