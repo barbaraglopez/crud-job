@@ -1,0 +1,44 @@
+//PALLETTE
+$backgroundColor:#05A8AA;
+$bannerColor:#BC412B;
+$linkSinLinea:none;
+$pink:#C65B7C;
+$navbarBackground:#05A8AA;
+$letterFont:white;
+$salmon:#D7B49E;
+$almostBlue:#698996;
+
+body {
+--text-color: #222;
+--bkg-color:#B8D5B8;
+--card-color:#D7B49E;
+--banner-color:#BC412B;
+--h1-color:#D7B49E;
+--navbar-color:#05A8AA;
+--navbar--a-color:#C65B7C;
+--hover-a-color:#C9C5BA;
+--bkg-span:#C65B7C;
+--select-color:#C65B7C;
+--title:#BC412B;
+--font-letter:white;
+}
+
+body.dark-theme {
+--text-color: #eee;
+--bkg-color: #121212;
+--card-color:#44355B;
+--banner-color:#362A46;
+--h1-color:rgb(225, 212, 212);
+--navbar-color:#C39BD3;
+--navbar--a-color:black;
+--hover-a-color:rgb(123, 114, 114);
+--bkg-span:#2A2230;
+--select-color:#C39BD3;
+--title:#CF99E3;
+--font-letter:black;
+}
+
+//FONTS
+$font--body:'Open Sans', sans-serif;
+$font--back:'Montserrat', sans-serif;
+$font--tittle:'Raleway', sans-serif;

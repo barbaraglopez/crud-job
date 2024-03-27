@@ -1,0 +1,91 @@
+.main{
+    @include center($direction:column, $alingment:center, $justify:center);
+    flex-wrap: wrap;
+
+    .main__cardsContainer{
+        @include center($direction:row, $alingment:center, $justify:center);
+        flex-wrap: wrap;
+        
+        .card{
+            @include center($direction:column, $alingment:center, $justify:center);
+            width: 25%;
+            height: 250px;
+            margin: 25px;
+            border-radius: 15px;
+            border: 1px solid $pink;
+
+            .card-body{
+                @include center($direction:column, $alingment:center, $justify:center);
+                text-align: center;
+                width: 80%;
+                height: 70%;
+
+                .card-title{
+                    font-size: 19px;
+                }
+
+                .card-description{            
+                    overflow: hidden;
+                }
+
+                .card-category{
+                    font-size: 12px;
+                    border-radius: 2px;
+                }
+
+                .card-seniority{
+                    font-size: 12px;
+                    border-radius: 2px;
+                }
+
+                .card-cat-sen{
+                    display: flex;
+
+                    
+                .span{
+                    padding: 3px;
+                    margin: 1px;
+                }
+            }
+        }
+        
+            .btnSeeDet{
+                padding: 5px;
+                border: 1px solid $navbarBackground;
+                border-radius: 5px;
+                color:$letterFont;
+                font-weight: bold;
+            }
+
+            .btnSeeDet:hover{
+                background-color:$almostBlue;
+                cursor:pointer;
+                border: 1px solid rgb(134, 7, 202);
+            }
+        }
+
+        @media only screen and (max-width: 790px) {
+            .card{
+                width: 40%;
+                margin: 5px;
+            }
+        }
+
+        @media only screen and (max-width: 450px) {
+            .card{
+                width: 80%;
+                margin: 5px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 790px) {
+        .main{
+            @include center($direction:column, $alingment:center, $justify:center);
+        }
+
+        .card{
+            width: 50%;
+        }
+    }
+}

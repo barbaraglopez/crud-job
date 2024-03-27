@@ -1,0 +1,681 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap");
+body {
+  --text-color: #222;
+  --bkg-color:#B8D5B8;
+  --card-color:#D7B49E;
+  --banner-color:#BC412B;
+  --h1-color:#D7B49E;
+  --navbar-color:#05A8AA;
+  --navbar--a-color:#C65B7C;
+  --hover-a-color:#C9C5BA;
+  --bkg-span:#C65B7C;
+  --select-color:#C65B7C;
+  --title:#BC412B;
+  --font-letter:white;
+}
+
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #121212;
+  --card-color:#44355B;
+  --banner-color:#362A46;
+  --h1-color:rgb(225, 212, 212);
+  --navbar-color:#C39BD3;
+  --navbar--a-color:black;
+  --hover-a-color:rgb(123, 114, 114);
+  --bkg-span:#2A2230;
+  --select-color:#C39BD3;
+  --title:#CF99E3;
+  --font-letter:black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  min-height: 100%;
+  bottom: 0rem;
+  position: relative;
+  margin-top: 0em;
+}
+
+body {
+  background: var(--bkg-color);
+  margin-bottom: 4rem;
+}
+
+.header {
+  background-color: var(--banner-color);
+}
+.header .header__imgContainer {
+  background-color: var(--banner-color);
+}
+.header .header__h1 {
+  color: var(--h1-color);
+}
+
+.spinner:after {
+  background-color: var(--bkg-color);
+}
+
+.navbar {
+  background-color: var(--navbar-color);
+}
+
+.navbar__a {
+  color: var(--navbar--a-color);
+}
+
+.navbar__a:hover {
+  color: var(--hover-a-color);
+  -webkit-text-stroke: 0.7px --banner-color;
+}
+
+.form__select {
+  background-color: var(--select-color);
+  color: var(--font-letter);
+}
+.form__select option {
+  background-color: var(--select-color);
+}
+
+.card {
+  background-color: var(--card-color);
+}
+.card .span {
+  background-color: var(--bkg-span);
+}
+.card .btnSeeDet {
+  background-color: var(--navbar-color);
+}
+.card .card-title {
+  color: var(--title);
+}
+
+.form-createJob form {
+  background-color: var(--bkg-span);
+}
+
+.form--editJob {
+  background-color: var(--banner-color);
+}
+
+.detailCard {
+  background-color: var(--card-color);
+}
+
+.main__prevButton:hover, .backToInto:hover, .remove:hover, .editJobs:hover, .deleteJobs:hover, .main__nextButton:hover {
+  background-color: var(--select-color);
+}
+
+.form__btn:hover, .form__btnCreateJob:hover {
+  background-color: var(--navbar-color);
+}
+
+.footer {
+  background-color: var(--select-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  height: 9em;
+  width: 100vw;
+}
+.header .header__imgContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.header .header__imgContainer .header__imgContainer--imgJob, .header .header__imgContainer .header__imgContainer__img {
+  width: 10em;
+  height: 7em;
+  text-align: center;
+}
+@media only screen and (max-width: 750px) {
+  .header .header__imgContainer .header__imgContainer--imgJob, .header .header__imgContainer .header__imgContainer__img {
+    width: 7em;
+    height: 7em;
+  }
+  .header .header__imgContainer .header__imgContainer__img {
+    width: 7em;
+    height: 7em;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .header .header__imgContainer .header__imgContainer--imgJob, .header .header__imgContainer .header__imgContainer__img {
+    width: 0em;
+    height: 0em;
+  }
+  .header .header__imgContainer .header__imgContainer__img {
+    width: 0em;
+    height: 0em;
+  }
+}
+.header .header__h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 62px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 1290px) {
+  .header .header__h1 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .header .header__h1 {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+.detailCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 50%;
+  border-radius: 15px;
+  padding: 15px;
+  border: 2px solid #05A8AA;
+}
+.detailCard .imgCardDetails {
+  width: 50%;
+  height: 45%;
+}
+.detailCard .card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.detailCard .card-body .card-title {
+  font-size: 23px;
+  -webkit-text-stroke: 0.8px black;
+  padding: 5px;
+}
+.detailCard .card-body .card-description, .detailCard .card-body .card-category, .detailCard .card-body .card-seniority, .detailCard .card-body .card-location {
+  font-size: 15px;
+}
+@media only screen and (max-width: 990px) {
+  .detailCard {
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+    padding: 15px;
+    border: 2px solid #05A8AA;
+  }
+}
+.spinner {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin: 50px;
+}
+
+.spinner::before,
+.spinner:after {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+}
+
+.spinner::before {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, #C65B7C 0%, #05A8AA 100%);
+  animation: spin 0.5s infinite linear;
+}
+
+.spinner:after {
+  width: 85%;
+  height: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.alertDelete {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  height: 5em;
+  font-size: 15px;
+  background-color: rgb(234, 203, 203);
+  padding: 1em;
+  border-radius: 10px;
+  border: 2px solid red;
+  color: red;
+  font-size: 15px;
+  margin: 3em;
+}
+
+.alertEmpty {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  background-color: #698996;
+  margin: 20px;
+  padding: 20px;
+  width: 90%;
+  height: 5em;
+  border-radius: 15px;
+  border: 1px solid white;
+}
+.alertEmpty h3 {
+  background-color: #698996;
+}
+.alertEmpty a {
+  background-color: #698996;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 30px;
+  border: 2px solid white;
+}
+.alertEmpty a:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.navbar {
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.navbar .navbar__aContainer .navbar__a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0px 20px;
+}
+@media only screen and (max-width: 590px) {
+  .navbar .navbar__aContainer .navbar__a {
+    font-size: 15px;
+  }
+}
+.navbar .navbar__darkMood {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+@media only screen and (max-width: 320px) {
+  .navbar .navbar__darkMood {
+    display: none;
+  }
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.formContainer .form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Work Sans", sans-serif;
+}
+.formContainer .form .form__select {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #05A8AA;
+}
+.formContainer .form .form__select:hover {
+  border: 1px solid #BC412B;
+}
+@media only screen and (max-width: 550px) {
+  .formContainer .form {
+    margin: 2px;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .formContainer .form {
+    margin: 0px;
+  }
+  .formContainer .form .form__select {
+    margin: 5px;
+    padding: 2px;
+  }
+  .formContainer .form .form__btn, .formContainer .form .form__btnCreateJob {
+    margin: 2px;
+    border-radius: 5px;
+    padding: 3px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .formContainer {
+    margin: 0px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+.form-createJob {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.form-createJob form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #05A8AA;
+  padding: 20px;
+}
+.form-createJob form .form__p, .form-createJob form input, .form-createJob form input input, .form-createJob form .form__p input, .form-createJob form input input, .form-createJob form input input input {
+  margin: 2px;
+  text-align: center;
+  border-radius: 7px;
+  padding: 4px;
+}
+.form-createJob form .form__p input, .form-createJob form input input, .form-createJob form input input input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 4px;
+}
+.form-createJob form input {
+  border-radius: 7px;
+  background-color: white;
+  margin: 7px;
+}
+
+.container-formEdit {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container-formEdit .form--editJob {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  border-radius: 20px;
+  border: 1px solid #05A8AA;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #05A8AA;
+}
+.container-formEdit .form--editJob p {
+  color: white;
+  padding: 5px;
+  margin: 5px;
+}
+.container-formEdit .form--editJob p input {
+  background-color: #05A8AA;
+  padding: 5px;
+  border-radius: 9px;
+  color: white;
+}
+@media only screen and (max-width: 990px) {
+  .container-formEdit .form--editJob {
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    padding: 15px;
+    border: 2px solid #05A8AA;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .form-createJob {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-createJob form {
+    margin: 4px;
+  }
+  .form-createJob form input {
+    margin: 5px;
+  }
+}
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main .main__cardsContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main .main__cardsContainer .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  height: 250px;
+  margin: 25px;
+  border-radius: 15px;
+  border: 1px solid #C65B7C;
+}
+.main .main__cardsContainer .card .card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  height: 70%;
+}
+.main .main__cardsContainer .card .card-body .card-title {
+  font-size: 19px;
+}
+.main .main__cardsContainer .card .card-body .card-description, .main .main__cardsContainer .card .detailCard .card-body .card-location, .detailCard .main .main__cardsContainer .card .card-body .card-location, .main .main__cardsContainer .card .detailCard .card-body .card-seniority, .detailCard .main .main__cardsContainer .card .card-body .card-seniority, .main .main__cardsContainer .card .detailCard .card-body .card-category, .detailCard .main .main__cardsContainer .card .card-body .card-category {
+  overflow: hidden;
+}
+.main .main__cardsContainer .card .card-body .card-category {
+  font-size: 12px;
+  border-radius: 2px;
+}
+.main .main__cardsContainer .card .card-body .card-seniority {
+  font-size: 12px;
+  border-radius: 2px;
+}
+.main .main__cardsContainer .card .card-body .card-cat-sen {
+  display: flex;
+}
+.main .main__cardsContainer .card .card-body .card-cat-sen .span {
+  padding: 3px;
+  margin: 1px;
+}
+.main .main__cardsContainer .card .btnSeeDet {
+  padding: 5px;
+  border: 1px solid #05A8AA;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+.main .main__cardsContainer .card .btnSeeDet:hover {
+  background-color: #698996;
+  cursor: pointer;
+  border: 1px solid rgb(134, 7, 202);
+}
+@media only screen and (max-width: 790px) {
+  .main .main__cardsContainer .card {
+    width: 40%;
+    margin: 5px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .main .main__cardsContainer .card {
+    width: 80%;
+    margin: 5px;
+  }
+}
+@media only screen and (max-width: 790px) {
+  .main .main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .card {
+    width: 50%;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 2.8em;
+  font-weight: bold;
+  font-size: 17px;
+  -webkit-text-stroke: 0.8px black;
+}
+.footer img {
+  height: 1.5rem;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 750px) {
+  .footer {
+    display: none;
+  }
+}
+.main__prevButton, .backToInto, .remove, .editJobs, .deleteJobs, .main__nextButton {
+  padding: 5px;
+  width: 70px;
+  background-color: #698996;
+  border: 1px solid #698996;
+  border-radius: 6px;
+  margin: 2px;
+  color: white;
+  font-size: 15px;
+}
+
+.main__prevButton:hover, .backToInto:hover, .remove:hover, .main__nextButton:hover, .deleteJobs:hover, .editJobs:hover {
+  cursor: pointer;
+}
+
+.remove {
+  background-color: red;
+  margin: 5px;
+}
+
+.remove:hover {
+  background-color: black;
+}
+
+.backToInto {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  background-color: rgb(0, 179, 0);
+}
+
+.backToInto:hover {
+  background-color: black;
+}
+
+.form__btn, .form__btnCreateJob {
+  margin: 7px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #698996;
+  color: white;
+  border: 2px solid #698996;
+}
+@media only screen and (max-width: 550px) {
+  .form__btn, .form__btnCreateJob {
+    margin: 2px;
+  }
+}
+
+.form__btn:hover, .form__btnCreateJob:hover {
+  cursor: pointer;
+  color: white;
+  border: 2px solid #05A8AA;
+}
+
+.form__btnCreateJob {
+  background-color: #05A8AA;
+}
+
+.form__btnCreateJob:hover {
+  background-color: black;
+}
+
+.btn-toggle {
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=styles.css.map */

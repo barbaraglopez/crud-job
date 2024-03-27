@@ -1,0 +1,53 @@
+.detailCard{
+    @include center($direction:column, $alingment:center, $justify:center);
+    width: 40%;
+    height: 50%;
+    border-radius: 15px;
+    padding: 15px;
+    border: 2px solid $navbarBackground;
+
+    .imgCardDetails{
+        width: 50%;
+        height: 45%;
+    }
+
+    .card-body{
+        @include center($direction:column, $alingment:center, $justify:center);
+
+        .card-title{
+            font-size: 23px;         
+            -webkit-text-stroke: 0.8px black;
+            padding: 5px;
+        }
+    
+        .card-description{
+            font-size: 15px;
+        }
+    
+        .card-location{
+            @extend .card-description;
+        }
+    
+        .card-seniority{
+            @extend .card-description;
+        }
+    
+        .card-category{
+            @extend .card-description;
+        }
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .detailCard{
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+    padding: 15px;
+    border: 2px solid $navbarBackground;
+
+    }
+}
+
+
+

@@ -1,0 +1,51 @@
+.alertDelete{
+    @include center($direction:row, $alingment:center, $justify:center);
+    width: 90%;
+    height: 5em;
+    font-size: 15px;
+    background-color: rgb(234, 203, 203);
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    margin: 3em;
+
+}
+
+
+.alertEmpty{
+    @include center($direction:column, $alingment:center, $justify:center);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: $almostBlue;
+    margin: 20px;
+    padding: 20px;
+    width: 90%;
+    height: 5em;
+    border-radius: 15px;
+    border: 1px solid white;
+
+    h3{
+        background-color: $almostBlue;
+    }
+
+    a{
+        background-color: $almostBlue;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: $linkSinLinea;
+        background-color: white;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 30px;
+        border: 2px solid white;
+    }
+
+    a:hover{
+        background-color: black;
+        color:white;
+        border: 2px solid white;
+    }
+}

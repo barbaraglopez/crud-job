@@ -1,0 +1,32 @@
+.navbar{
+    width: 100vw;
+    height: 4rem;
+    @include center($direction:column, $alingment:center, $justify:center);
+    text-align: center;
+    .navbar__aContainer{
+        .navbar__a{
+            text-decoration: $linkSinLinea;
+            font-family: $font--body;
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0px 20px;
+        }
+    
+    
+        @media only screen and (max-width: 590px) {
+            .navbar__a{
+                font-size: 15px;
+            }
+        }
+    }
+
+    .navbar__darkMood{
+        @include center($direction:row, $alingment:center, $justify:center);
+    }
+
+    @media only screen and (max-width: 320px) {
+        .navbar__darkMood{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Proyect Jobs API</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        <script src="./js/script.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__imgContainer">
+                <img class="header__imgContainer__img" src="./img/clase-en-linea.png" alt="portatil con cuaderno">
+            </div>
+            <h1 class="header__h1">Find your dream job here!</h1>
+            <div class="header__imgContainer">
+                <img class="header__imgContainer--imgJob" src="./img/dream.png" alt="mujer astrounauta">
+            </div>
+        </header>
+        <nav class="navbar">
+            <div class="navbar__aContainer">
+                <a href="#" class="navbar__a" id="navbar--careers">Careers</a>
+                <a href="index.html" class="navbar__a">Home</a>
+                <a href="#" class="navbar__a" id="navbar--createJob">Create a job</a>
+            </div>
+            <div class="navbar__darkMood">
+                <button class="btn-toggle">🌞|🌛</button>
+            </div>
+        </nav>
+        <div class="formContainer">    
+            <form class="form">
+                <select class="form__select" id="form__select--country">
+                    <option disabled selected>Choose a country</option>
+                    <option>Argentina</option>
+                    <option>United States</option>
+                    <option>Uruguay</option>
+                    <option>Chile</option>
+                    <option>Peru</option>
+                    <option>Rusia</option>
+                </select>
+                <select class="form__select" id="form__select--seniority">
+                    <option disabled selected>Choose a seniority</option>
+                    <option>Junior</option>
+                    <option>Trainee</option>
+                    <option>Semi-senior</option>
+                    <option>Senior</option>
+                </select>
+                <select class="form__select" id="form__select--category">
+                    <option disabled selected>Choose a category</option>
+                    <option class="form__select__Opt">Development</option>
+                    <option class="form__select__Opt">QA</option>
+                    <option class="form__select__Opt">DevOps</option>
+                    <option class="form__select__Opt">Manager</option>
+                    <option class="form__select__Opt">Design</option>
+                    <option class="form__select__Opt">Product</option>
+                </select>
+                <button class="form__btn" id="form__search--Btn">Search</button>
+                <button class="form__btn" id="form__clean--Btn">Clear</button> 
+            </form>
+        </div>
+        <main class="main" id ="main">
+            <div class="spinner" id="spinner"></div>
+            <div class="hidden form-createJob" id="form-createJob">
+                <form class="formCreate">
+                    <p class="form__p">Job title: <input type="text" name="title" placeholder="Job title" id="title"></p>
+                    <p class="form__p">Description: <input type="text" name="description" placeholder="Description" id="description"></p>
+                    <p class="form__p">Tags: <input type="text" name="tags" placeholder="Brazil" id="location"></p>
+                    <input type="text" name="seniority" placeholder="Junior" id="seniority">
+                    <input type="text" name="category" placeholder="Developmen" id="category">
+                    <div class="button-container-createJob">
+                        <button class="form__btnCreateJob" type="submit" id="form-submit">Send</button>
+                        <button class="form__btnCreateJob" type="submit" id="form-back">Back</button>
+                    </div>
+                </form>
+            </div>        
+            <div class="main__cardsContainer" id="cardsContainer">
+            </div>
+            <div class="buttonContainer" id="buttonContainer-next-prev">
+                <button class="main__prevButton" id="buttonPrev">Prev</button>
+                <button class="main__nextButton" id="buttonNext">Next</button>
+            </div>
+            <div class="hidden container-formEdit" id="formCreate">
+                <form class="form--editJob" id="form-editJob">
+                    <p class="form__p">Job title: <input type="text" name="title" placeholder="Job title" id="editTitle" ></p>
+                    <p class="form__p">Description: <input type="text" name="description" placeholder="Description" id="editDescription"></p>
+                    <p class="form__p">Tags: <input type="text" name="tags" placeholder="Brazil" id="editLocation"></p>
+                    <p class="form__p">Seniority: <input type="text" name="seniority" placeholder="Junior" id="editSeniority"></p>
+                    <p class="form__p">Category: <input type="text" name="category" placeholder="Developmen" id="editCategory"></p>
+                    <div class="form-edit-BtnContainer">
+                        <button class="form__btnCreateJob" type="submit" id="send-edit-job">Send info</button>
+                        <button class="form__btnCreateJob" id="for--cancel-createJob">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+                <img src="./img/world.png" alt="mundo">
+                All rights reserved by Bárbara López
+        </footer>
+    </body>
+</html>

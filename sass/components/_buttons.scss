@@ -1,0 +1,80 @@
+.main__prevButton{
+    padding: 5px;
+    width: 70px;
+    background-color: $almostBlue;
+    border: 1px solid $almostBlue;
+    border-radius: 6px;
+    margin: 2px;
+    color: $letterFont;
+    font-size: 15px;
+}
+
+.main__nextButton{
+    @extend.main__prevButton;
+}
+
+.deleteJobs{
+    @extend.main__prevButton;
+}
+
+.editJobs{
+    @extend.main__prevButton;
+}
+.main__prevButton:hover{
+    cursor: pointer;
+}
+
+.remove{
+    @extend.main__prevButton;
+    background-color: red;
+    margin: 5px;
+}
+
+.remove:hover{
+    background-color: black;
+}
+
+.backToInto{
+    @include center($direction:row, $alingment:center, $justify:center);
+    @extend.main__prevButton;
+    text-decoration: $linkSinLinea;
+    background-color: rgb(0, 179, 0);
+}
+
+.backToInto:hover{
+    background-color: black;
+}
+
+.form__btn{
+    margin: 7px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color:$almostBlue;
+    color: $letterFont;
+    border: 2px solid $almostBlue;
+
+    @media only screen and (max-width: 550px) {
+        margin: 2px;
+    }
+}
+
+.form__btn:hover{
+    cursor: pointer;
+    color: $letterFont;
+    border: 2px solid $navbarBackground;
+}
+
+.form__btnCreateJob{
+    @extend .form__btn;
+    background-color: $navbarBackground;
+}
+
+.form__btnCreateJob:hover{
+    background-color: black;
+}
+
+.btn-toggle{
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: transparent;
+}

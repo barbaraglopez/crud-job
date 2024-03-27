@@ -1,0 +1,66 @@
+.header{
+    @include center($direction:row, $alingment:center, $justify:space-around);
+    height: 9em;
+    width: 100vw;
+
+    .header__imgContainer{
+        @include center($direction:column, $alingment:center, $justify:space-around);
+        .header__imgContainer--imgJob{
+            width: 10em;
+            height:7em;
+            text-align: center;
+        }
+        
+        .header__imgContainer__img{
+        @extend .header__imgContainer--imgJob;
+        }
+
+        @media only screen and (max-width: 750px) {
+            .header__imgContainer--imgJob{
+                width: 7em;
+                height:7em;
+            }
+    
+            .header__imgContainer__img{
+                width: 7em;
+                height:7em;
+            }
+        } 
+
+        @media only screen and (max-width: 320px) {
+            .header__imgContainer--imgJob{
+                width: 0em;
+                height:0em;
+            }
+    
+            .header__imgContainer__img{
+                width: 0em;
+                height:0em;
+            }
+        }
+    }
+    
+
+    .header__h1{
+        font-family: $font--tittle;
+        font-size: 62px;
+        font-weight: 900;
+        text-transform: capitalize;
+    }
+
+    @media only screen and (max-width: 1290px) {
+        .header__h1{
+            font-size: 40px;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (max-width: 650px) {
+        .header__h1{
+            font-size: 22px;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}

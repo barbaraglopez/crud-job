@@ -1,0 +1,23 @@
+.footer{
+    @include center($direction:row, $alingment:center, $justify:center);
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 2.8em;
+    font-weight: bold;
+    font-size: 17px;
+    -webkit-text-stroke: 0.8px black;
+
+    img{
+        height: 1.5rem;
+        margin: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    .footer{
+        display: none;
+    }
+}

@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $font--body;
+}
+
+html{
+    min-height: 100%;
+    bottom: 0rem;
+    position: relative;
+    margin-top: 0em;
+}
+
+body {
+    background: var(--bkg-color);
+    margin-bottom: 4rem;
+}
+
+.header{
+    background-color: var(--banner-color);
+    .header__imgContainer{
+        background-color: var(--banner-color);
+    }
+
+    .header__h1{
+        color: var(--h1-color);
+    }
+}
+
+.spinner:after{
+    background-color: var(--bkg-color);
+}
+
+.navbar{
+    background-color: var(--navbar-color);
+}
+
+.navbar__a{
+    color: var(--navbar--a-color);
+}
+
+.navbar__a:hover{
+    color:var(--hover-a-color);
+    -webkit-text-stroke: 0.7px --banner-color;
+}
+
+.form__select{
+    background-color: var(--select-color);
+    color: var(--font-letter);
+
+    option{
+        background-color: var(--select-color);
+    }
+}
+
+.card{
+    background-color: var(--card-color);
+
+    .span{
+        background-color: var(--bkg-span);
+    }
+
+    .btnSeeDet{
+        background-color: var(--navbar-color);
+    }
+
+    .card-title{
+        color: var(--title);
+    }
+}
+
+.form-createJob{
+    form{
+        background-color: var(--bkg-span);
+    }
+}
+
+.form--editJob{
+    background-color: var(--banner-color);
+}
+
+.detailCard{
+    background-color: var(--card-color);
+}
+
+.main__prevButton:hover{
+    background-color: var(--select-color);
+}
+
+.form__btn:hover{
+    background-color: var(--navbar-color);
+}
+
+.footer{
+    background-color: var(--select-color);
+}
+
+p {
+color: var(--text-color);
+}
+
+
+.hidden{
+display: none!important;
+}
